@@ -9,9 +9,6 @@ class App < Sinatra::Base
     erb :create_puppy
   end
 
-  post '/' do
-    @info = Puppy.new(params[:user_input])
-    erb :display_puppy
-  end
+
 
 end
