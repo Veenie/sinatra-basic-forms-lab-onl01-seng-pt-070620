@@ -10,8 +10,7 @@ class App < Sinatra::Base
   end
 
   post '/' do
-    @info = Puppy.new(params[:user_input])
-    erb :display_puppy
+    
   end
 
 end
